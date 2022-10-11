@@ -23,8 +23,8 @@
     <main>
         <div id="name">
             <h2>What is your name?</h2>
-            <label for="name">Enter your full neme:
-                <input type="text">
+            <label for="name" id="name1">Enter your full neme:
+                <input type="text" id="yourname">
             </label>
         </div>
         <div id="head">
@@ -37,9 +37,9 @@
                 <label for="Date">Day:
                     <select name="days" id="days">
                         <option value=""></option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -75,9 +75,9 @@
                 <label for="month">Month:
                     <select name="months" id="months">
                         <option value=""></option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -92,23 +92,25 @@
             </div>
             <div id="year">
                 <label for="year">Year:
-                    <input type="text">
+                    <input type="text" id="birthYear">
                 </label>
             </div>
         </div>
         <div id="buttonTochek">
-            <button id="check">check</button>
+            <button id="check" onclick="getHoloscope()">check</button>
         </div>
         <div id="holoscope">
-            <h3>Hello user,this is your holoscope.</h3>
-            <p id="sign">sign</p>
-            <p id="animal">animal reprsentoing</p>
-            <p id="daterange">date range</p>
+            <h3 id="userholoscope"></h3>
+            <p id="sign"></p>
+            <p id="animal"></p>
+            <p id="daterange"></p>
+            <p id="yearOfBirth"></p>
         </div>
     </main>
     <footer>
         &copy;Niyonkuru Bertin
     </footer>
+    <script src="../javascript/holoscope.js"></script>
 </body>
 
 </html>

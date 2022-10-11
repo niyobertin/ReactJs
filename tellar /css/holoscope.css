@@ -1,6 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
+    /* background-color: rgb(132, 64, 64); */
+
+
 }
 
 #headsection {
@@ -17,6 +20,13 @@ body {
     height: 6em;
     width: 7em;
     border-radius: 25%;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: red solid 5px;
+    border-radius: 5%;
 }
 
 #name {
@@ -73,6 +83,11 @@ input {
     /* border-radius: 15%; */
 }
 
+#name1 {
+    display: flex;
+    margin-left: 3em;
+}
+
 button:hover {
     background-color: rgb(26, 189, 143);
     color: aliceblue;
@@ -81,11 +96,13 @@ button:hover {
 
 #holoscope {
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     height: 15em;
     margin: 10px;
+    margin-left: 3em;
+
     font-size: larger;
-    font-weight: bold;
+
 }
 
 footer {
